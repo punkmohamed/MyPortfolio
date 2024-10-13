@@ -12,10 +12,14 @@ import { cn } from "@/lib/utils";
 export const TracingBeam = ({
     children,
     className,
+    filter,
 }: {
     children: React.ReactNode;
     className?: string;
+    filter?: string;
 }) => {
+
+
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -29,7 +33,7 @@ export const TracingBeam = ({
         if (contentRef.current) {
             setSvgHeight(contentRef.current.offsetHeight);
         }
-    }, []);
+    }, [filter]);
 
     const y1 = useSpring(
         useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),

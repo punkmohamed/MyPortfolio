@@ -6,6 +6,12 @@ import { Timeline } from "@/components/ui/timeline";
 import { TracingBeam } from "./ui/tracing-beam";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+const projectVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: 20 },
+};
 const RecentProjects = () => {
     const [filter, setFilter] = useState('')
 
@@ -19,23 +25,29 @@ const RecentProjects = () => {
                 A small selection of {' '}
                 <span className="text-purple">recent projects</span>
             </h1>
-            <div className="my-4  flex items-center justify-center flex-wrap  gap-2">
+            <div className="my-6  flex items-center justify-center flex-wrap  gap-2">
                 <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => setFilter("")}>All</button>
                 <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => setFilter("HTML & CSS")}>HTML & CSS</button>
-                <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => setFilter("react")}>React</button>
-                <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => setFilter("NativeJs")}>NativeJs</button>
-                <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => setFilter("nodeJS")}>NodeJs</button>
+                <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => setFilter("React")}>React</button>
+                <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => setFilter("Nextjs")}>NextJs</button>
+                <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => setFilter("NativeJS")}>NativeJs</button>
+                <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={() => setFilter("NodeJs")}>NodeJs</button>
             </div>
-            <TracingBeam className="pl-[0.9rem]">
-                <div className="flex flex-wrap items-center justify-center p-4  gap-16 my-10">
+            <TracingBeam className="pl-[0.9rem]" filter={filter}>
+                <motion.div layout className="flex flex-wrap items-center justify-center p-4  gap-16 my-10">
                     {filteredProjects.map(({ id, title, des, img, iconLists, link }) => (
-                        <div key={id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-[20rem] w-[70vw]">
+                        <motion.div
+                            variants={projectVariants}
+                            initial="initial"
+                            animate="animate"
+                            exit="exit"
+                            key={id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-[20rem] w-[70vw]">
                             <PinContainer title={link} href={link}>
                                 <div className='relative flex items-center justify-center sm:w-[20rem] w-[80vw] overflow-hidden h-[30vh] lg:h-[30vh] mb-10'>
                                     <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                                         <img src="/bg.png" alt="bg-img" />
                                     </div>
-                                    <img src={img} alt={title} className="z-10 absolute bottom-0" />
+                                    <img src={img} alt={title} className="z-10 absolute bottom-0 rotate-2  rounded-lg h-[12.5rem]" />
                                 </div>
                                 <h1 className="font-bold md:text-xl text-base line-clamp-1 kg:text-2xl"> {title} </h1>
                                 <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2" >{des}</p>
@@ -54,9 +66,9 @@ const RecentProjects = () => {
                                     </div>
                                 </div>
                             </PinContainer>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </TracingBeam>
 
         </div>
