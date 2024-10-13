@@ -2,7 +2,7 @@
 import { FaLocationArrow } from "react-icons/fa6"
 import MagicButton from "./ui/MagicButton"
 import { Spotlight } from "./ui/spotlight"
-import { TextGenerateEffect } from "./ui/TextGenerateEffect"
+
 import './Hero.css'
 import { motion } from 'framer-motion';
 

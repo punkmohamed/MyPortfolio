@@ -2,7 +2,7 @@
 import React from "react";
 
 import { twMerge } from "tailwind-merge";
-import { HiDocumentText } from "react-icons/hi";
+
 import { motion } from "framer-motion";
 export const IconContainer = ({ icon, name, delay }: any) => {
     return (

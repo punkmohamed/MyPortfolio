@@ -65,7 +65,7 @@ export const PinContainer = React.memo(
         );
     }
 );
-
+PinContainer.displayName = "PinContainer";
 export const PinPerspective = React.memo(
     ({
         title,
@@ -176,3 +176,4 @@ export const PinPerspective = React.memo(
         );
     }
 );
+PinPerspective.displayName = "PinPerspective";

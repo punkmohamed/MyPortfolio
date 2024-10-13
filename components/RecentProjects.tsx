@@ -2,11 +2,11 @@
 import { projects } from "@/data"
 import { PinContainer } from "./ui/3d-pin"
 import { FaLocationArrow } from "react-icons/fa6"
-import { Timeline } from "@/components/ui/timeline";
+
 import { TracingBeam } from "./ui/tracing-beam";
-import { useRouter } from "next/router";
+
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 const projectVariants = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
