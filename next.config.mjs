@@ -1,7 +1,13 @@
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     typescript: {
-        ignoreBuildErrors: true,
-    }
+        // Set to false for production builds to catch TypeScript errors
+        ignoreBuildErrors: false,
+    },
+    eslint: {
+        // Set to false to ignore ESLint errors during builds
+        ignoreDuringBuilds: false,
+    },
 };
+
+module.exports = nextConfig;
