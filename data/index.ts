@@ -235,7 +235,7 @@ export const projects = [
             "/tail.svg",
             "/fm.svg"
         ],
-        link: "https://mohamed-hassan-portfolio.vercel.app/",
+        link: "https://mohamed-nextjs-portfolio.vercel.app/",
         type: ["Nextjs"]
     },
     {
