@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -74,13 +74,30 @@ export const PinPerspective = React.memo(
         title?: string;
         href?: string;
     }) => {
+        const [isMobile, setIsMobile] = useState(false);
+
+        // Check if the user is on a mobile device by monitoring the screen width
+        useEffect(() => {
+            const handleResize = () => {
+                setIsMobile(window.innerWidth < 768);
+            };
+
+            // Check the screen size when the component mounts
+            handleResize();
+
+            // Update screen size when the window is resized
+            window.addEventListener('resize', handleResize);
+
+            // Cleanup the event listener when the component is unmounted
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
         return (
             <motion.div className="pointer-events-none w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition-opacity duration-300 ease-in-out">
                 <div className="w-full h-full -mt-7 flex-none inset-0">
                     <div className="absolute top-0 inset-x-0 flex justify-center">
                         <Link
                             href={href || "/"}
-                            target="_blank"
+                            target={isMobile ? '_self' : '_blank'}
                             rel="noopener noreferrer"
                             className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10"
                         >
