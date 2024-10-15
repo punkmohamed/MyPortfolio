@@ -43,13 +43,16 @@ const Hero = () => {
 
                         className="app__header-img"
                     >
-                        <Image src='/IMG_4559.png' alt="profile_bg" />
+                        <Image src='/IMG_4559.png' width={500}
+                            height={500} alt="profile_bg" />
                         <div
 
                         >
                             <Image
                                 src='/circle.svg'
                                 alt="profile_circle"
+                                width={400}
+                                height={400}
                                 className="overlay_circle"
                             />
                         </div>
