@@ -67,7 +67,8 @@ const Hero = () => {
                                 className="circle-cmp flex items-center justify-center z-[9999] border-2 border-purple shadow-black-100 p-2 m-2 rounded-full"
                                 key={`circle-${index}`}
                             >
-                                <Image src={circle} alt="profile_bg" className="w-16 h-16 md:w-20 md:h-20" />
+                                <Image src={circle} alt="profile_bg" className="w-16 h-16 md:w-20 md:h-20" width={64}
+                                    height={64} />
                             </div>
                         ))}
                     </div>
