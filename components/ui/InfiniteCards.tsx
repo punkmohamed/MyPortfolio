@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 import '../skills.css'
+import Image from 'next/image';
 export const InfiniteMovingCards = ({
     items,
     direction = "left",
@@ -97,7 +98,7 @@ export const InfiniteMovingCards = ({
                         <div
                             className=" flex items-center justify-center"
                         >
-                            <img src={skill.icon} alt={skill.name} />
+                            <Image src={skill.icon} alt={skill.name} />
                         </div>
                         <p className="p-text">{skill.name}</p>
                     </li>
