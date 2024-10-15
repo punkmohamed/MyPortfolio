@@ -15,9 +15,9 @@ export default function Home() {
     <main className=" relative bg-black-100 flex items-center justify-center overflow-clip  mx-auto flex-col sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
-        <Hero />
+        {/* <Hero /> */}
         <Grid />
-        <RecentProjects />
+        {/* <RecentProjects /> */}
         <Skills />
         {/* <Clients />
         <Experience /> */}
