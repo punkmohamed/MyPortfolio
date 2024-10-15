@@ -5,7 +5,7 @@ import { Spotlight } from "./ui/spotlight"
 
 import './Hero.css'
 import { motion } from 'framer-motion';
-
+import Image from 'next/image';
 const images = ['/next.svg', '/re.svg', '/tail.svg']
 const scaleVariants = {
     whileInView: {
@@ -54,14 +54,17 @@ const Hero = () => {
                         transition={{ duration: 0.5, delayChildren: 0.5 }}
                         className="app__header-img"
                     >
-                        <img src='/IMG_4559.png' alt="profile_bg" />
-                        <motion.img
+                        <Image src='/IMG_4559.png' alt="profile_bg" />
+                        <motion.div
                             whileInView={{ scale: [0, 1] }}
                             transition={{ duration: 1, ease: 'easeInOut' }}
-                            src='/circle.svg'
-                            alt="profile_circle"
-                            className="overlay_circle"
-                        />
+                        >
+                            <Image
+                                src='/circle.svg'
+                                alt="profile_circle"
+                                className="overlay_circle"
+                            />
+                        </motion.div>
                     </motion.div>
 
                     <motion.div
@@ -74,7 +77,7 @@ const Hero = () => {
                                 className="circle-cmp flex items-center justify-center z-[9999] border-2 border-purple shadow-black-100 p-2 m-2 rounded-full"
                                 key={`circle-${index}`}
                             >
-                                <img src={circle} alt="profile_bg" className="w-16 h-16 md:w-20 md:h-20" />
+                                <Image src={circle} alt="profile_bg" className="w-16 h-16 md:w-20 md:h-20" />
                             </div>
                         ))}
                     </motion.div>
