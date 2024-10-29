@@ -319,7 +319,7 @@ export const projects = [
         iconLists: [
             "/re.svg",
             "/tail.svg",
-            "/typescript-svgrepo-com.svg",
+            "/ts.svg",
             "/api-svgrepo-com.svg"
         ],
         link: "https://youtube-clone-phi-green.vercel.app/",
