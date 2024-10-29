@@ -98,7 +98,7 @@ export const InfiniteMovingCards = ({
                         <div
                             className=" flex items-center justify-center"
                         >
-                            <Image src={skill.icon} alt={skill.name} />
+                            <Image src={skill.icon} width={50} height={50} alt={skill.name} />
                         </div>
                         <p className="p-text">{skill.name}</p>
                     </li>

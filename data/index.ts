@@ -10,18 +10,18 @@ export const skills = [
     { name: "JavaScript", icon: "js-svgrepo-com.svg" },
     { name: "JQuery", icon: "jquery-svgrepo-com.svg" },
     { name: "Bootstrap", icon: "bootstrap-svgrepo-com.svg" },
-    { name: "Sass", icon: "sass.png" },
+    { name: "Sass", icon: "/sass.png" },
     { name: "Tailwind CSS", icon: "tail.svg" },
     { name: "TypeScript", icon: "ts.svg" },
-    { name: "React.js", icon: "react.png" },
-    { name: "Material UI", icon: "mu5.png" },
+    { name: "React.js", icon: "/react.png" },
+    { name: "Material UI", icon: "/mu5.png" },
     { name: "Redux", icon: "redux-svgrepo-com.svg" },
     { name: "Next.js", icon: "next.svg" },
     { name: "Framer Motion", icon: "fm.svg" },
     { name: "Three.js", icon: "three.svg" },
     { name: "Socket.IO", icon: "socket-io-svgrepo-com.svg" },
     { name: "GSAP", icon: "gsap.svg" },
-    { name: "Git & GitHub", icon: "git.png" },
+    { name: "Git & GitHub", icon: "/git.png" },
 ];
 
 export const gridItems = [
@@ -92,7 +92,7 @@ export const projects = [
         id: 1,
         title: "Africano Restaurant",
         des: "My ITI graduation project: A modern restaurant website with a user-friendly interface that displays the menu, restaurant info, and online reservation features.",
-        img: "Screenshot (484).png",
+        img: "/Screenshot (484).png",
         iconLists: [
             "/re.svg",
             "/tail.svg",
@@ -108,7 +108,7 @@ export const projects = [
         id: 2,
         title: "Animated Apple iPhone 3D Website",
         des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
-        img: "Screenshot (494).png",
+        img: "/Screenshot (494).png",
         iconLists: [
             "/re.svg",
             "/js-svgrepo-com.svg",
@@ -123,7 +123,7 @@ export const projects = [
         id: 3,
         title: "SkillQuest",
         des: "An E-Learning platform built with React, providing an intuitive interface for online courses and education materials.",
-        img: "Screenshot (487).png",
+        img: "/Screenshot (487).png",
         iconLists: [
             "/re.svg",
             "/js-svgrepo-com.svg",
@@ -138,7 +138,7 @@ export const projects = [
         id: 4,
         title: "Brainwave App",
         des: "A creative and interactive web app utilizing GSAP animations to enhance user experience with smooth transitions and visual effects.",
-        img: "Screenshot (481).png",
+        img: "/Screenshot (481).png",
         iconLists: [
             "/gsap.svg",
             "/js-svgrepo-com.svg",
@@ -153,7 +153,7 @@ export const projects = [
         id: 5,
         title: "Twitter Clone",
         des: "A responsive and interactive Twitter clone showcasing advanced Bootstrap layouts and jQuery-powered functionalities.",
-        img: "Screenshot (483).png",
+        img: "/Screenshot (483).png",
         iconLists: [
             "/bootstrap-svgrepo-com.svg",
             "/jquery-svgrepo-com.svg",
@@ -168,7 +168,7 @@ export const projects = [
         id: 6,
         title: "Todo App",
         des: "A minimalistic Todo application featuring a clean UI, built with Tailwind CSS and JavaScript for task management and tracking.",
-        img: "Screenshot (485).png",
+        img: "/Screenshot (485).png",
         iconLists: [
             "/html-5-svgrepo-com.svg",
             "/js-svgrepo-com.svg",
@@ -182,7 +182,7 @@ export const projects = [
         id: 7,
         title: "Weather App",
         des: "A weather application built with React, providing real-time weather information based on location with a clean and simple UI.",
-        img: "Screenshot (490).png",
+        img: "/Screenshot (490).png",
         iconLists: [
             "/re.svg",
             "/html-5-svgrepo-com.svg",
@@ -197,7 +197,7 @@ export const projects = [
         id: 8,
         title: "Metaverse App",
         des: "An immersive experience into the world of the Metaverse, built with Next.js for server-side rendering and enhanced performance.",
-        img: "Screenshot (482).png",
+        img: "/Screenshot (482).png",
         iconLists: [
             "/next.svg",
             "/html-5-svgrepo-com.svg",
@@ -213,7 +213,7 @@ export const projects = [
         id: 9,
         title: "Interior Design Landing Page",
         des: "A sleek and visually appealing landing page for an interior design company, showcasing services and designs with beautiful layouts.",
-        img: "Screenshot (486).png",
+        img: "/Screenshot (486).png",
         iconLists: [
             "/html-5-svgrepo-com.svg",
             "/css-3-svgrepo-com.svg",
@@ -227,7 +227,7 @@ export const projects = [
         id: 10,
         title: "Personal Portfolio",
         des: "A personal portfolio website showcasing my projects, skills, and experience, designed with a modern, professional layout.",
-        img: "Screenshot (491).png",
+        img: "/Screenshot (491).png",
         iconLists: [
             "/html-5-svgrepo-com.svg",
             "/js-svgrepo-com.svg",
@@ -242,7 +242,7 @@ export const projects = [
         id: 11,
         title: "Simple React Apps",
         des: "A collection of simple and functional React-based applications demonstrating the core features and reactivity of React.js.",
-        img: "Screenshot (488).png",
+        img: "/Screenshot (488).png",
         iconLists: [
             "/gsap.svg",
             "/re.svg",
@@ -258,7 +258,7 @@ export const projects = [
         id: 12,
         title: "E-Commerce Project",
         des: "An online e-commerce application built with Angular, featuring product management and user-friendly interface.",
-        img: "Screenshot (493).png",
+        img: "/Screenshot (493).png",
         iconLists: [
             "/html-5-svgrepo-com.svg",
             "/ts.svg",
@@ -273,7 +273,7 @@ export const projects = [
         id: 13,
         title: "Swift Cart",
         des: "A shopping cart application built with HTML, CSS, and JavaScript, using Firebase for backend services.",
-        img: "Screenshot (492).png",
+        img: "/Screenshot (492).png",
         iconLists: [
             "/html-5-svgrepo-com.svg",
             "/css-3-svgrepo-com.svg",
@@ -287,7 +287,7 @@ export const projects = [
         id: 14,
         title: "Currency Converter",
         des: "A React-based currency converter application that allows users to convert between various currencies in real time.",
-        img: "Screenshot (489).png",
+        img: "/Screenshot (489).png",
         iconLists: [
             "/bootstrap-svgrepo-com.svg",
             "/html-5-svgrepo-com.svg",
@@ -297,7 +297,62 @@ export const projects = [
         ],
         link: "https://react-js-currency-converter.vercel.app/",
         type: ["React"]
+    }, {
+        id: 15,
+        title: "Disney Plus Clone",
+        des: "A Disney Plus clone utilizing Firebase for authentication and data retrieval for shows and movies. Built with React, Redux Toolkit for state management, and styled with Tailwind CSS for a modern, responsive design.",
+        img: "/Screenshot (498).png",
+        iconLists: [
+            "/re.svg",
+            "/tail.svg",
+            "/redux-svgrepo-com.svg",
+            "/firebase-svgrepo-com.svg"
+        ],
+        link: "https://disney-plus-clone-gsap.vercel.app/",
+        type: ["React"]
     },
+    {
+        id: 16,
+        title: "YouTube Clone",
+        des: "An interactive YouTube clone leveraging the YouTube API for real-time video playback. Built with React, Tailwind CSS for responsive design, and TypeScript for type-safe code. Features Context API for organized state management and embedded video playback using <iframe>.",
+        img: "/Screenshot (502).png",
+        iconLists: [
+            "/re.svg",
+            "/tail.svg",
+            "/typescript-svgrepo-com.svg",
+            "/api-svgrepo-com.svg"
+        ],
+        link: "https://youtube-clone-phi-green.vercel.app/",
+        type: ["React"]
+    },
+    {
+        id: 17,
+        title: "Anime Sketch Book",
+        des: "An interactive sketchbook for anime lovers, created with HTML, Tailwind CSS, jQuery, and Turn.js to simulate a realistic page-turning effect. This project combines simplicity and creativity to present anime artwork in a unique and engaging format.",
+        img: "/Screenshot (501).png",
+        iconLists: [
+            "/html-5-svgrepo-com.svg",
+            "/tail.svg",
+            "/jquery-svgrepo-com.svg",
+            "/js-svgrepo-com.svg"
+        ],
+        link: "https://anime-sketch-book.vercel.app/",
+        type: ["HTML & CSS", "NativeJS"]
+    },
+    {
+        id: 18,
+        title: "Anime Vault",
+        des: "An Anime Vault built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion to deliver a seamless, animated browsing experience for anime fans. The project includes smooth transitions and interactive UI elements powered by Framer Motion, with responsive design ensuring adaptability across devices.",
+        img: "/Screenshot (500).png",
+        iconLists: [
+            "/next.svg",
+            "/ts.svg",
+            "/tail.svg",
+            "/fm.svg"
+        ],
+        link: "https://anime-vault.vercel.app/",
+        type: ["Nextjs"]
+    }
 ];
 
 // export const projects = [
