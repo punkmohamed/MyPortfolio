@@ -350,7 +350,7 @@ export const projects = [
             "/tail.svg",
             "/fm.svg"
         ],
-        link: "https://anime-vault.vercel.app/",
+        link: "https://anime-vault-nextjs-ten.vercel.app/",
         type: ["Nextjs"]
     }
 ];
