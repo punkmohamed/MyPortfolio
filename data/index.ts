@@ -102,7 +102,7 @@ export const projects = [
             "/docker-svgrepo-com.svg"
         ],
         link: "https://africano-resturant-user.vercel.app/",
-        type: ["NodeJs", "React"]
+        type: ["Full Stack", "React"]
     },
     {
         id: 2,
@@ -362,10 +362,10 @@ export const projects = [
             "/next.svg",
             "/ts.svg",
             "/tail.svg",
-            "/mongodb-svgrepo-com.svg"
+            "/mongodb-svgrepo-com (1).svg"
         ],
         link: "https://concept-craft-nextjs.vercel.app/",
-        type: ["Nextjs", "TypeScript"]
+        type: ["Nextjs", "Full Stack"]
     }
 ];
 
