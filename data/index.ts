@@ -352,6 +352,20 @@ export const projects = [
         ],
         link: "https://anime-vault-nextjs-ten.vercel.app/",
         type: ["Nextjs"]
+    },
+    {
+        id: 19,
+        title: "Concept Craft",
+        des: "A Next.js application that allows users to pitch their startups, connect with entrepreneurs, submit ideas, vote on pitches, and participate in virtual competitions. Built with Next.js, TypeScript, Tailwind CSS, and MongoDB to provide a platform for startup enthusiasts and innovators.",
+        img: "/Screenshot (515).png",
+        iconLists: [
+            "/next.svg",
+            "/ts.svg",
+            "/tail.svg",
+            "/mongodb-svgrepo-com.svg"
+        ],
+        link: "https://concept-craft-nextjs.vercel.app/",
+        type: ["Nextjs", "TypeScript"]
     }
 ];
 
